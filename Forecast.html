@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<title> FORECAST (AWW)</title>
+
+<body>
+    <!DOCTYPE html>
+    <html>
+    <title>FORECAST (AWW) </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="FORECAST.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <body>
+    <!-- NAV BAR START (AWW) -->
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+      <button class="w3-bar-item w3-button w3-large"
+      onclick="w3_close()">Close &times;</button>
+      <a href="Forecast.html" class="w3-bar-item w3-button">FORECAST</a>
+      <a href="#" class="w3-bar-item w3-button">Link 2</a>
+      <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+    
+    <div id="main">
+    
+    <div class="w3-teal">
+      <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+      <div class="w3-container">
+        <h1>Austin Weather Watchers (AWW) </h1>
+      </div>
+    </div>
+    
+    
+    </div>
+    
+    <script>
+    function w3_open() {
+      document.getElementById("main").style.marginLeft = "25%";
+      document.getElementById("mySidebar").style.width = "25%";
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("openNav").style.display = 'none';
+    }
+    function w3_close() {
+      document.getElementById("main").style.marginLeft = "0%";
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("openNav").style.display = "inline-block";
+    }
+    </script>
+    <!-- NAV BAR END (AWW) -->
+
+    <div class="weather-app">
+      <div  class="container">    
+        <h3 class="brand">The Weather</h3> 
+        <div>
+          <h1 class="temp">16&#176;</h1>
+          <div class="city-time">
+          <h1 class="name">London</h1>
+        <small>
+    <span class="time">06:09</span>
+    -
+    <span class="date">
+      Monday sep 19
+    </span>
+</small>
+</div>
+<div class="weather">
+    <img src="./weather/icon/day/113.png"class="icon" alt="icon" width="50"height="50"/>
+    <span class="condition">Cloudy</span>
+</div>
+</div>
+</div>
+<div class="panel">
+<form id="locationInput">
+    <input
+    type="text"
+    class="search"
+    placeholder="Search Location..."
+  />
+  <button type="submit" class="submit">
+    <i class= "fa fa-search" aria-hidden= "true" ></i>
+  </button>
+
+</form>
+
+
+<ul class="cities">
+    <li class="city">New York</li>
+    <li class="city">California</li>
+    <li class="city">Paris</li>
+    <li class="city">tokyo</li>
+</ul>
+<ul class="details">
+<h4>Weather Details</h4>
+<li>
+    <span>Cloudy</span>
+    <span class="cloud">89%</span>
+</li>
+<li>
+    <span>Humidity</span>
+    <span class="humidity">64%</span>
+</li>
+<li>
+    <span>Wind</span>
+    <span class="wind">8MPH</span>
+</li>
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
