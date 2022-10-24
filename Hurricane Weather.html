@@ -4,12 +4,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="HOMEstyles.css">
+<link rel="'stlesheet" href="Hurricane Weather.css">
 <body>
 <!-- NAV BAR START (AWW) -->
 <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
   <button class="w3-bar-item w3-button w3-large"
   onclick="w3_close()">Close &times;</button>
   <a href="HOME.html" class="w3-bar-item w3-button">Home page</a>
+  <a href="Currant forecast.html" class="w3-bar-item w3-button">Currant forecast</a>
   <a href="7 Day.html" class="w3-bar-item w3-button">7 Day Forecast </a>
   <a href="14 Day.html" class="w3-bar-item w3-button">14 Day Forecast</a>
   <a href="Month forecast.html" class="w3-bar-item w3-button">Month Forecast</a>
@@ -44,6 +46,65 @@ function w3_close() {
   document.getElementById("openNav").style.display = "inline-block";
 }
 </script>
-<!-- NAV BAR END (AWW) -->
+<!--START OF CSS-->
+<style>
+  .iframeContainer{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 1500;
+    height: 2000;
+}
+
+
+.iframeContainer{
+    position: relative;
+    width: 390px;
+    height: 800px;
+    overflow: hidden;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .panel, .container .iframeContainer {
+        position: relative; 
+        width: 100%;
+        top: initial;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    html {
+        font: 25px;
+    }
+}
+
+@media screen and (max-height: 300px) {
+    .weather-app {
+        min-height: 40em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    html {
+        font: 5px;
+    }
+}
+@media screen and (max-width: 2800px) {
+    .iframeContainer {
+       max-width: 2900px;
+    }
+}
+</style>
+
+
+
+<!--END OF CSS-->
+
+<div class="iframeContainer">
+  <iframe src="https://www.nhc.noaa.gov/" scroling="no" class="iframeContainer"></iframe>
+</div>
+
 </body>
 </html>
